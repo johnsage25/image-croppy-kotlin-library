@@ -56,14 +56,3 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxandroid:2.1.1"
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release
-                groupId = "com.pearldrift"
-                version = "1.0.1"
-            }
-        }
-    }
-}
